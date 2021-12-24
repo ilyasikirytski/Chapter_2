@@ -26,21 +26,21 @@ public class B_2 {
         System.out.println("Матрица N*N");
         for (int i = 1; i <= n; i++) {
             for (int k = 1; k <= n; k++) {
-                System.out.printf("%4d ", (i * k));
+                System.out.print("\t" + (i * k));
             }
             System.out.println();
         }
         System.out.println("По очерёдно - слева направо");
         for (int i = 0; i < n; i++) {
             for (int k = 0; k < n; k++) {
-                System.out.printf("%4d", k + (n * i) + 1);
+                System.out.print("\t" + (k + (n * i) + 1));
             }
             System.out.println();
         }
         System.out.println("По очерёдно - сверху вниз");
         for (int k = 0; k < n; k++) {
             for (int i = 0; i < n; i++) {
-                System.out.printf("%4d", k + (n * i) + 1);
+                System.out.print("\t" + (k + (n * i) + 1));
             }
             System.out.println();
         }
