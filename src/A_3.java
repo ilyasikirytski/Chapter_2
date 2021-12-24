@@ -12,13 +12,14 @@ public class A_3 {
         for (int i = 0; i < str.length; i++) {
             str[i] = scan.next();
         }
-        int aver = 0;
+        int sumOfNumbers = 0;
         for (String s : str) {
-            aver += s.length();
+            sumOfNumbers += s.length();
         }
-        System.out.printf("Средняя длинна строки: %s%n", aver / size);
+        int average = sumOfNumbers/size;
+        System.out.printf("Средняя длинна строки: %s%n", average);
         for (String s : str) {
-            if (s.length() > aver / size) {
+            if (s.length() > average) {
                 System.out.printf("Строчки которые больше средней длинны : %s%n", s);
             }
         }
