@@ -5,6 +5,18 @@
 
 import java.util.Scanner;
 
+/**
+ * TODO switch (line) {
+ *   case 1: {
+ *       break;
+ *   }
+ *   case 2: {
+ *       break;
+ *    }
+ *  }
+ *
+ *  Обычный switch
+ */
 public class B_4 {
     public static void main(String[] args) {
         System.out.println("Введите число от 1 до 12 и нажмите <Enter> :");
