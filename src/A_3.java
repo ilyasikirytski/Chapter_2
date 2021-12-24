@@ -1,6 +1,5 @@
 // Ввести n чисел с консоли. Вывести на консоль те числа, длина которых меньше (больше) средней, а также длину
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class A_3 {
@@ -13,15 +12,14 @@ public class A_3 {
         for (int i = 0; i < str.length; i++) {
             str[i] = scan.next();
         }
-        int[] mid = new int[size];
-        for (int i = 0; i < str.length; i++) {
-            mid[i] = (str[i].length() - str[i].length() / 2);
+        int aver = 0;
+        for (String s : str) {
+            aver += s.length();
         }
-        double average = Arrays.stream(mid).average().getAsDouble();
-        System.out.printf("Средняя длинна строки: %s%n", average);
-        for (int i = 0; i < str.length; i++) {
-            if (str[i].length() > mid[i]){
-                System.out.printf("Строчки которые больше средней длинны : %s%n", str[i]);
+        System.out.printf("Средняя длинна строки: %s%n", aver / size);
+        for (String s : str) {
+            if (s.length() > aver / size) {
+                System.out.printf("Строчки которые больше средней длинны : %s%n", s);
             }
         }
     }
